@@ -1,0 +1,25 @@
+German: 
+Dieses Tool dient ausschließlich zu Bildungs-, Forschungs- und Testzwecken in legalen Umgebungen.
+
+Es wurde entwickelt, um die Sicherheit von Passwörtern zu analysieren und das Bewusstsein für schwache Zugangsdaten zu schärfen.
+Die Nutzung ist nur erlaubt in autorisierten Penetrationstests, eigenen Testsystemen, CTF-Wettbewerben oder anderen Szenarien, in denen der Einsatz rechtlich und vertraglich erlaubt ist.
+
+Jeglicher Missbrauch – z. B. gegen fremde Systeme ohne ausdrückliche Erlaubnis – ist verboten und kann strafrechtliche Konsequenzen haben.
+
+Der Autor übernimmt keine Haftung für Schäden, Rechtsverstöße oder Verluste, die durch unsachgemäße Nutzung entstehen.
+Die Verantwortung liegt vollständig beim Nutzer.
+
+
+
+English: 
+This tool is intended solely for educational, research, and testing purposes in legal environments.
+
+It was developed to analyze password security and raise awareness of weak access data.
+Its use is only permitted in authorized penetration tests, proprietary test systems, CTF competitions, or other scenarios in which its use is legally and contractually permitted.
+
+Any misuse—e.g., against third-party systems without express permission—is prohibited and may result in criminal prosecution.
+
+The author accepts no liability for damage, legal violations, or losses resulting from improper use.
+Responsibility lies entirely with the user.
+
+Translated with DeepL.com (free version)
