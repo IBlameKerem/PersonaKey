@@ -29,12 +29,17 @@ def startGUI():
 		filepath = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Textfile", "*.txt")], title = "Saves as")
 
 		if filepath:
-			savePasswordsToFile(textOutput.passwords, filepath)
+			selectedHashes = {
+				"md5": useMD5.get(),
+				"sha1": useSHA1.get(),
+				"ntlm": useNTLM.get()
+			}
+			savePasswordsToFile(textOutput.passwords, filepath, selectedHashes)
 			messagebox.showinfo("Saved", f"Succesfully saved: \n{filepath}")
 
 	root = tk.Tk()
 	root.title("PersonaKey")
-	root.geometry("500x500")
+	root.geometry("500x550")
 
 	tk.Label(root, text="Name: ").pack()
 	entryName = tk.Entry(root)
@@ -52,6 +57,15 @@ def startGUI():
 
 	textOutput = tk.Text(root, height=15, width=60)
 	textOutput.pack()
+
+	useMD5 = tk.BooleanVar()
+	useSHA1 = tk.BooleanVar()
+	useNTLM = tk.BooleanVar()
+
+	tk.Checkbutton(root, text ="MD5", variable=useMD5).pack()
+	tk.Checkbutton(root, text ="SHA1", variable=useSHA1).pack()
+	tk.Checkbutton(root, text ="NTLM", variable=useNTLM).pack()
+
 
 	tk.Button(root, text="Save as .txt", command=onSave).pack(pady=10)
 
